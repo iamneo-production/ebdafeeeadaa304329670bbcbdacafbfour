@@ -12,7 +12,7 @@ import com.example.springapp.model.Book;
 public class BookService {
     private List<Book> books = new ArrayList<>();
 
-    private List<> boks=new ArrayList<>();
+    private List<Book> boks=new ArrayList<>();
 
     // Constructor
     public BookService() {
@@ -24,9 +24,16 @@ public class BookService {
     }
 
     
-    public List<> getAllBooks() {
+    public List<Book> getAllBooks() {
+        try{
         return boks;
+        }
+        catch(Exception e){
+
+        }
     }
+
+
 
     public Book getBookById(Integer id) {
         return books.stream().filter(book -> book.getId().equals(id)).findFirst().orElse(null);
