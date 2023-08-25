@@ -25,12 +25,9 @@ public class BookService {
 
     
     public List<Book> getAllBooks() {
-        try{
+    
         return boks;
-        }
-        catch(Exception e){
-
-        }
+        
     }
 
 
