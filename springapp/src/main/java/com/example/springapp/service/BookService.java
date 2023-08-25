@@ -23,7 +23,8 @@ public class BookService {
         books.add(new Book(4, "Book 4", "Author 3", 2015));
     }
 
-    public List<Book> getAllBooks() {
+    
+    public List<> getAllBooks() {
         return boks;
     }
 
