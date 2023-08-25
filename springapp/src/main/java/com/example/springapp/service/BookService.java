@@ -12,6 +12,8 @@ import com.example.springapp.model.Book;
 public class BookService {
     private List<Book> books = new ArrayList<>();
 
+    private List<> boks=new ArrayList<>();
+
     // Constructor
     public BookService() {
         // For the sake of this example, let's assume we have some books in the system.
@@ -22,7 +24,7 @@ public class BookService {
     }
 
     public List<Book> getAllBooks() {
-        return books;
+        return boks;
     }
 
     public Book getBookById(Integer id) {
